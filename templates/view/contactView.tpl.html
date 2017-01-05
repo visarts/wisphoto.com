@@ -1,0 +1,35 @@
+<breadcrumbs></breadcrumbs>
+<div class="animated fadeIn">
+  <div class="page-header">
+    <h1>Contact us</h1>
+  </div>
+  <div class="message paragraph">
+    Have questions about our services? Interested in joining up? (it's totally free!) Just want to get to know us a little better? We look forward to hearing from you!
+  </div>
+  <div class="paragraph">
+    <div class="alert alert-success" id="messages" data-ng-show="message">{{message}}</div>
+    <form class="form" data-ng-submit="processForm()">
+      <div id="name-group" class="form-group" data-ng-class="{ 'has-error' : formErrors.name }">
+        <label>Name</label><br />
+        <input type="text" name="contactName" data-ng-model="formData.contactName" class="form-control" placeholder="Your name here" required />
+        <span class="help-block" data-ng-show="formErrors.name">{{formErrors.name}}</span>
+      </div>
+      <div id="name-group" class="form-group" data-ng-class="{ 'has-error' : formErrors.email }">
+        <label>Email</label><br />
+        <input type="text" name="contactEmail" data-ng-model="formData.contactEmail" class="form-control" placeholder="someone@something.com" required />
+        <span class="help-block" data-ng-show="formErrors.email">{{formErrors.email}}</span>
+      </div>
+      <div id="name-group" class="form-group" data-ng-class="{ 'has-error' : formErrors.message }">
+        <label>Message</label><br />
+        <textarea rows="6" name="contactName" data-ng-model="formData.messageContent" class="form-control" placeholder="What's on your mind?" required></textarea>
+        <span class="help-block" data-ng-show="formErrors.message">{{formErrors.message}}</span>
+      </div>
+      <button type="submit" class="btn btn-success btn-lg button">
+        <fa name="paper-plane"></fa> Submit!
+      </button>
+      <button type="reset" class="btn btn-warning btn-lg button" data-ng-click="resetForm()">
+        <fa name="refresh"></fa>
+      </button>
+    </form>
+  </div>
+</div>

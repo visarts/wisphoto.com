@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html data-ng-app="mainApp">
+  <head>
+    <title>Wisconsin Photography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:site_name" content="Wisconsin Photography"/>
+    <meta property="og:title" content="Wisconsin Photography: for photographers, by photographers" />
+    <meta property="og:description" content="An organization of individuals with a passion for photography. We aim to be a dedicated resource and community for photographers in the state." />
+    <meta property="og:image" content="http://www.wisphoto.com/images/wissquarelogo.jpg" />
+    <meta property="og:url" content="http://www.wisphoto.com/">
+    <meta property="og:type" content="Service"/>
+
+    <link rel="stylesheet" type="text/css" href="lib/bower/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="lib/bower/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap_override.css" />
+    <link rel="stylesheet" type="text/css" href="lib/bower/animate.css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animated_override.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+    
+  </head>
+  <body data-ng-controller="mainController">
+    <main-header></main-header>
+
+    <div class="main_body">
+      <div class="container">
+        <div ng-view></div>
+      </div>
+    </div>
+
+    <main-footer></main-footer>
+    
+    <script src="./lib/bower/jquery/dist/jquery.min.js"></script>
+    <script src="./lib/bower/angular/angular.min.js"></script>
+    <script src="./lib/angular/angular-route.min.js"></script>
+    <script src="./lib/bower/angular-animate/angular-animate.min.js"></script>
+    <script src="./lib/bower/ng-breadcrumbs/dist/ng-breadcrumbs.min.js"></script>
+    <script src="./lib/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./lib/bower/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="./lib/bower/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="./lib/bower/angular-fontawesome/dist/angular-fontawesome.min.js"></script>
+    <!--<script src="./js/header_scroll_effect.js"></script>-->
+    
+    <!-- load application -->
+    <script src="./js/app.js"></script>
+
+    <!-- load services -->
+    <script src="./js/services/httpService.js"></script>
+    <script src="./js/services/services.js"></script>
+
+    <!-- load the view -->
+    <script src="./js/view/frontPageView.js"></script>
+    <script src="./js/view/contactView.js"></script>
+    <script src="./js/view/portfolioView.js"></script>
+    <script src="./js/view/servicesView.js"></script>
+    <script src="./js/view/view.js"></script>
+    
+    <!-- load directives -->
+    <script src="./js/directives/breadcrumbsDirective.js"></script>
+    <script src="./js/directives/imageDescDirective.js"></script>
+    <script src="./js/directives/mainHeaderDirective.js"></script>
+    <script src="./js/directives/mainFooterDirective.js"></script>
+    <script src="./js/directives/directives.js"></script>
+  </body>
+</html>

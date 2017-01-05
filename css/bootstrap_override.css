@@ -1,0 +1,139 @@
+.page-header {
+  border-bottom-width: .5em;
+}
+/* forms */
+.form {
+  max-width: 65%;
+  min-width: 300px;
+}
+.form-control {
+  background: #f6f6f6;
+}
+.btn-danger {
+  background: #bf1e1e;
+}
+.btn-warning {
+  background: #d37326;
+}
+.btn-success {
+  background: #418447;
+}
+@media(min-width: 768px) {
+  .navbar-nav > li > a {
+    margin:0;
+    padding: .75em;
+  }
+}
+@media(max-width: 767px) {
+  .navbar-nav > li > a {
+    margin:0;
+    margin-left: 1em;
+  }
+}
+
+/* the nav */
+.navbar-default {
+
+}
+.navbar-default .navbar-brand {
+  color: #999;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a.navbar-brand {
+  color: #cccccc;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ddd;
+  background-color: rgba(108, 114, 124, .4);
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fafafa;
+  background-color: #6C727C;
+}
+.navbar-default .navbar-link {
+  color: #777;
+}
+.navbar-default .navbar-link:hover {
+  color: #333;
+}
+.navbar-default .btn-link {
+  color: #777;
+}
+.navbar-default .btn-link:hover,
+.navbar-default .btn-link:focus {
+  color: #333;
+}
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 8px;
+  margin-top: 2em;
+  margin-right: 15px;
+  margin-bottom: 0px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 3px 3px 5px #000;
+}
+.navbar-toggle:focus {
+  outline: 0;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 1.5em;
+  height: 2px;
+  border-radius: 1px;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+.navbar-nav {
+  
+}
+
+/* breadcrumbs */
+.breadcrumb {
+  padding: 0;
+  margin: .75em 0 1.5em 0;
+  list-style: none;
+  background-color: transparent;
+}
+.breadcrumb > li {
+  display: inline-block;
+  padding: .2em .5em .2em .5em;
+  margin-right: .2em;
+  border-top-right-radius: .75em;
+  background-color: #b3b9c1
+}
+.breadcrumb > li > a {
+  color: #fff;
+}
+.breadcrumb > li + li:before {
+  padding: 0;
+  color: #ccc;
+  opacity: .75;
+  content: '\25BA';
+}
+.breadcrumb > .active {
+  color: #ffffa9;
+  background-color: #449D44;
+}
+@media(min-width: 767px) {
+  .breadcrumb {
+    display: none;
+    visibility: collapse;
+  }
+}

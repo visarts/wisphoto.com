@@ -1,0 +1,9 @@
+{
+    "name": "WISPHOTO",
+    "dependencies": {
+        "bootstrap": "~3.3.5",
+        "angular-bootstrap": "~0.13.4",
+        "angular-ui-router": "~0.2.15",
+        "angular-fontawesome": "~1.0.0"
+    }
+}
